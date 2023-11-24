@@ -1,0 +1,146 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Defaults */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+.body-container{
+    margin: 0 7rem;
+    font-family: Inter;
+}
+
+.special{
+    background: #FF1F3D;
+    border: none;
+}
+.btn-secondary{
+    border: none;
+}
+/* Edit Bootstrap classes */
+/* Navbar */
+.header{
+    margin-top: 3rem;
+}
+
+/* Category */
+.category{
+    .active{
+        background: brown;
+        color: white;
+    }
+}
+
+/* Card */
+
+.card, #data-container .card-display-style{
+    width: 20rem;
+    height: 25rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    /* position: ; */
+    overflow-y: hidden;
+}
+.card-img-top {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    position: relative;
+}
+.duration{
+    background-color: black;
+    position: relative;
+    bottom: 3rem;
+    left: 13rem;
+    color: #FFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    width: 30%;
+}
+
+.author-photo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+.author-name, .views{
+    color: rgba(23, 23, 23, 0.70);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Blog */
+.blog-body{
+    background-image: url("./resources/blog-bg.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    .container{
+        margin-top: 10rem;
+    }
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1.5em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1.25em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
+    
+}
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: rgb(28,39,41); 
+    --bs-accordion-btn-color: white; 
+    --bs-accordion-active-bg: rgb(28,39,41); 
+    --bs-accordion-active-color: white; 
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: rgb(28,39,41);
+    --bs-accordion-color: white;
+
+}
+.home-btn {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/* Media */
+@media only screen and (max-width: 767px) {
+    .body-container{
+        margin: 0 1rem;
+    }
+  /* Navbar */
+    .header{
+    text-align: center;
+    .logo, .sort-btn{
+        margin-bottom: 1rem;
+    }
+  }
+
+  /* Category */
+  .category{
+    .music-btn, .all-btn, .comedy-btn, .drawing-btn{
+        margin-right: 5px;
+    }
+  }
+
+  .card-img-top{
+    height: 20vh;
+  }
+}
